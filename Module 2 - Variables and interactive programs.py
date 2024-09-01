@@ -1,4 +1,4 @@
-# Exercise Lab - part 2
+# Module 2 - Exercise 1
 # Exercise 1
 name = input("What is your name? ")
 print(f"Hello, {name}!")
