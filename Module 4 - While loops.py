@@ -22,18 +22,18 @@ while True:
 largest = 0
 smallest = 0
 
-number = int(input("Enter your number: "))
+number = input("Enter your number: ")
 if number != "":
-    smallest = largest = number
+    smallest = largest = int(number)
     while number != "":
-
-        if number < smallest:
-            smallest = number
-        elif number > largest:
-            largest = number
-        number = int(input("Enter your number: "))
+        numberAsInt = int(number)
+        if numberAsInt < smallest:
+            smallest = numberAsInt
+        elif numberAsInt > largest:
+            largest = numberAsInt
+        number = input("Enter your number: ")
     else:
-        print(largest & smallest)
+        print(largest, smallest)
 
 # Exercise 4
 
